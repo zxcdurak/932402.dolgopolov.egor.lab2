@@ -55,3 +55,40 @@ aside {
     padding: 20px;
     background-color: var(--color-secondary);
 }
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.project-card {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: 16px;
+    border-radius: 16px;
+}
+
+.project-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: repeating-linear-gradient(45deg, var(--color-primary) 0 12px, var(--color-secondary) 12px 24px);
+    transition: filter 0.3s;
+}
+
+.project-card:hover::before {
+    filter: blur(4px);
+}
+
+.badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 2px 8px;
+    border-radius: 8px;
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+}
