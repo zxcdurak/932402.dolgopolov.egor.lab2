@@ -1,0 +1,57 @@
+:root {
+    --color-primary: #FFF6E5;
+    --color-secondary: #F6E3C6;
+    --color-accent: #A34A2E;
+    --color-text: #3B2A22;
+    --font-main: Arial, sans-serif;
+    --font-heading: Georgia, serif;
+}
+
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    font-family: var(--font-main);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-heading);
+}
+
+h2 {
+    color: var(--color-accent);
+}
+
+header {
+    position: static;
+}
+
+header,
+footer {
+    padding: 20px;
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+}
+
+nav a {
+    margin-right: 16px;
+    color: var(--color-primary);
+}
+
+nav a:visited {
+    color: var(--color-secondary);
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+aside {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: var(--color-secondary);
+}
