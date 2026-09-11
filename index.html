@@ -4,21 +4,29 @@
     <meta charset="UTF-8">
     <title>О себе — Кулинар и фуд-блогер</title>
 </head>
-<body style="background-color:#F5E6D3; color:#4E342E;">
+<body>
 
-    <header style="background-color:#8D6E63; padding:15px;">
-        <h1 style="color:#FFF8F0;">Долгополов Егор</h1>
-        <p style="color:#FFF8F0;">О себе — кулинар и фуд-блогер</p>
+    <header>
+        <h1>Долгополов Егор</h1>
+        <p>О себе — кулинар и фуд-блогер</p>
+        <nav>
+            <a href="#skills">Навыки</a>
+            <a href="#projects">Проекты</a>
+            <a href="#feedback">Обратная связь</a>
+        </nav>
     </header>
 
     <main>
 
-        <figure>
-            <img src="images/avatar.jpg" alt="Макароны по Эриковски" width="200" height="200">
-        </figure>
-
         <section>
-            <h2 style="color:#A0522D;">Навыки</h2>
+            <figure>
+                <img src="images/avatar.jpg" alt="Макароны с курицей по-эриковски" width="200" height="200">
+                <figcaption>Фирменное блюдо — макароны по-эриковски</figcaption>
+            </figure>
+        </section>
+
+        <section id="skills">
+            <h2>Навыки</h2>
             <ul>
                 <li>Знание кухонь мира (итальянская, азиатская, средиземноморская)</li>
                 <li>Фотографирование блюд</li>
@@ -27,27 +35,40 @@
             </ul>
         </section>
 
-        <section>
-            <h2 style="color:#A0522D;">Проекты</h2>
-            <ol>
-                <li>Паста карбонара по классическому рецепту</li>
-                <li>Домашний рамен с яйцом онсен</li>
-                <li>Тирамису без сырых яиц</li>
-                <li>Макароны с курицей по Эриковски</li>
-            </ol>
+        <section id="projects">
+            <h2>Проекты</h2>
+            <div class="projects">
+                <article class="project-card">
+                    <h3>Паста карбонара</h3>
+                    <p>Классический рецепт с гуанчиале и пекорино.</p>
+                </article>
+                <article class="project-card">
+                    <h3>Домашний рамен</h3>
+                    <p>Насыщенный бульон и яйцо онсен.</p>
+                </article>
+                <article class="project-card">
+                    <h3>Тирамису</h3>
+                    <p>Версия без сырых яиц.</p>
+                </article>
+                <article class="project-card">
+                    <span class="badge">Хит</span>
+                    <h3>Макароны по-эриковски</h3>
+                    <p>Спагетти с курицей в сливочно-томатном соусе.</p>
+                </article>
+            </div>
         </section>
 
-        <section>
-            <h2 style="color:#A0522D;">Обратная связь</h2>
+        <section id="feedback">
+            <h2>Обратная связь</h2>
             <form action="#" method="post">
-                <label for="name">Имя:</label><br>
-                <input type="text" id="name" name="name" placeholder="Введите ваше имя"><br><br>
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" placeholder="Введите ваше имя">
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" placeholder="Введите ваш email"><br><br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Введите ваш email">
 
-                <label for="message">Сообщение:</label><br>
-                <textarea id="message" name="message" placeholder="Введите ваше сообщение"></textarea><br><br>
+                <label for="message">Сообщение</label>
+                <textarea id="message" name="message" placeholder="Введите ваше сообщение"></textarea>
 
                 <button type="submit">Отправить</button>
             </form>
@@ -55,13 +76,13 @@
 
     </main>
 
-    <aside style="background-color:#D7B899; padding:10px;">
-        <h2 style="color:#4E342E;">Любимая кухня</h2>
+    <aside>
+        <h2>Любимая кухня</h2>
         <p>Итальянская кухня и оливковое масло как любимый ингредиент.</p>
     </aside>
 
-    <footer style="background-color:#8D6E63; padding:10px;">
-        <p style="color:#FFF8F0;">&copy; 2026 Долгополов Егор. Все права защищены.</p>
+    <footer>
+        <p>&copy; 2026 Долгополов Егор. Все права защищены.</p>
     </footer>
 
 </body>
