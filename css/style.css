@@ -3,6 +3,7 @@
     --color-secondary: #F6E3C6;
     --color-accent: #A34A2E;
     --color-text: #3B2A22;
+    --color-focus: #F2B705;
     --font-main: Arial, sans-serif;
     --font-heading: Georgia, serif;
 }
@@ -91,4 +92,42 @@ aside {
     border-radius: 8px;
     background-color: var(--color-accent);
     color: var(--color-primary);
+}
+
+label,
+input,
+textarea {
+    display: block;
+}
+
+input,
+textarea {
+    width: 300px;
+    margin: 4px 0 12px;
+    padding: 8px;
+    border: 1px solid var(--color-text);
+    border-radius: 8px;
+    font: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid var(--color-focus);
+}
+
+button {
+    padding: 8px 24px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color-text);
+}
+
+button:active {
+    transform: scale(0.95);
 }
